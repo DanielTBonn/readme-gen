@@ -27,11 +27,11 @@ ${data.installationInstructions}
 
 ${data.usageInformation}
 
-## Contribution Guidelines
+## How to Contribute
 
 ${data.contributionGuidelines}
 
-## Test Instructions
+## Tests
 
 ${data.testInstructions}
 
