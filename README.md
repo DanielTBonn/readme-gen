@@ -8,7 +8,7 @@ Having a readme-gen will make writing READMEs more efficient.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [How to Contribute](#contribute)
+- [Contribute](#contribute)
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
@@ -21,7 +21,7 @@ N/A
 
 N/A
 
-## How to Contribute
+## Contribute
 
 N/A
 
