@@ -159,8 +159,10 @@ function init() {
     .prompt(readmeQuestions)
     .then((answers) => {
         // Information generated will be used to create a table of contents
+        let result = JSON.stringify(answers, null, '  ');
         console.log('\nTesting:');
-        console.log(JSON.stringify(answers, null, '  '));
+        console.log(result);
+        writeToFile('readmeinfo.txt', result);
     })
     .catch((error) => {
         if (error.isTtyError) {
