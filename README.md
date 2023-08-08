@@ -1,24 +1,33 @@
-# a
+# readme-gen
 
 ## Description
 
-b
+Having a readme-gen will make writing READMEs more efficient.
 
-## Installation Instructions
+## Table of Contents
 
-c
+- [Installation](#installation)
+- [Usage](#usage)
+- [How to Contribute](#contribute)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-## Usage Information
+## Installation
 
-d
+N/A
 
-## Contribution Guidelines
+## Usage
 
-e
+N/A
 
-## Test Instructions
+## How to Contribute
 
-f
+N/A
+
+## Tests
+
+N/A
 
 ## License
 
@@ -26,6 +35,6 @@ MIT
 
 ## Questions
 
-g
-h
+danieltbonn
+danieltbonn@gmail.com
 
