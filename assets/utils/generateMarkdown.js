@@ -13,7 +13,7 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data);
-  return `# ${data.title}
+  let markdown1 = `# ${data.title}
 
 ## Description
 
@@ -54,6 +54,10 @@ ${data.githubUsername}
 ${data.email}
 
 `;
+
+  let markdown2 = addSections(data);
+  return markdown2;
+
           
 }
 
@@ -68,8 +72,50 @@ const question = {
   "testInstructions": "Unsure.",
   "license": "MIT",
   "githubUsername": "danieltbonn",
-  "email": "danieltbonn@gmail.com"
+  "email": "danieltbonn@gmail.com",
+  "blank": ""
 }
+
+
+function addSections(data) {
+  
+  const keys = {
+    "title": `# ${data.title}\n\n`,
+    "description": `## Description
+  
+${data.description}\n\n`,
+    "installationInstructions": `## Installation
+  
+${data.installationInstructions}\n\n`,
+    "usageInformation": `## Usage
+  
+${data.usageInformation}\n\n`,
+    "contributionGuidelines": `## How to Contribute
+  
+${data.contributionGuidelines}\n\n`,
+    "testInstructions": `## Tests
+  
+${data.testInstructions}\n\n`,
+    "license": `## License
+  
+${data.license}\n\n`,
+    "githubUsername": `## Questions
+  
+${data.githubUsername}\n`,
+    "email": `${data.email}`,
+  }
+
+  let markdownGen = ``;
+  for (let key in data) {
+    if (data[key]) {
+      markdownGen += keys[key];
+    }
+  }
+  return markdownGen;
+
+}
+
+addSections(question);
 
 // let genMark = generateMarkdown(question);
 // console.log(genMark)
