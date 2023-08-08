@@ -145,7 +145,12 @@ readmeQuestions = [
 ]
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  const fs = require('fs');
+  fs.appendFile(fileName, data, (err) => {
+    err ? console.log(err) : console.log(`${fileName} created successfully!`)
+  })
+}
 
 // TODO: Create a function to initialize app
 function init() {
