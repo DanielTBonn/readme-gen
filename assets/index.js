@@ -148,11 +148,7 @@ readmeQuestions = [
 function writeToFile(fileName, data) {
   const fs = require('fs');
   const markdown = require('./utils/generateMarkdown.js');
-  console.log("This is markdown: ", markdown);
-  console.log("This is data: ", data);
-
   let genMarkdown = markdown(data);
-  console.log("Mark down was generated!", genMarkdown)
   fs.writeFile(fileName, genMarkdown, (err) => {
     err ? console.log(err) : console.log(`${fileName} created successfully!`);
   })
