@@ -118,7 +118,7 @@ readmeQuestions = [
     },
     {
         type: "input",
-        name: "contribution-guidelines",
+        name: "contributionGuidelines",
         message: "Enter guidelines for contributing to the project",
     },
     {
@@ -168,7 +168,7 @@ function init() {
         let result = JSON.stringify(answers, null, '  ');
         console.log('\nTesting:');
         console.log(result);
-        writeToFile('testmarkdown.txt', result);
+        writeToFile('testmarkdown.txt', answers);
     })
     .catch((error) => {
         if (error.isTtyError) {
