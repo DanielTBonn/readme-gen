@@ -108,12 +108,12 @@ readmeQuestions = [
     },
     {
         type: "input",
-        name: "installation-instructions",
+        name: "installationInstructions",
         message: "Enter instructions for installing the project.",
     },
     {
         type: "input",
-        name: "usage-information",
+        name: "usageInformation",
         message: "Enter usage information for the project.",
     },
     {
@@ -123,7 +123,7 @@ readmeQuestions = [
     },
     {
         type: "input",
-        name: "test-instructions",
+        name: "testInstructions",
         message: "Enter instructrions for testing the project.",
     },
     {
@@ -134,7 +134,7 @@ readmeQuestions = [
     },
     {
         type: "input",
-        name: "github-username",
+        name: "githubUsername",
         message: "Add your github username.",
     },
     {
@@ -147,8 +147,14 @@ readmeQuestions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   const fs = require('fs');
-  fs.appendFile(fileName, data, (err) => {
-    err ? console.log(err) : console.log(`${fileName} created successfully!`)
+  const markdown = require('./utils/generateMarkdown.js');
+  console.log("This is markdown: ", markdown);
+  console.log("This is data: ", data);
+
+  let genMarkdown = markdown(data);
+  console.log("Mark down was generated!", genMarkdown)
+  fs.writeFile(fileName, genMarkdown, (err) => {
+    err ? console.log(err) : console.log(`${fileName} created successfully!`);
   })
 }
 
@@ -162,16 +168,33 @@ function init() {
         let result = JSON.stringify(answers, null, '  ');
         console.log('\nTesting:');
         console.log(result);
-        writeToFile('readmeinfo.txt', result);
+        writeToFile('testmarkdown.txt', result);
     })
     .catch((error) => {
         if (error.isTtyError) {
         // Prompt couldn't be rendered in the current environment
+        console.log("There was an error.", error);
         } else {
         // Something else went wrong
+        console.log("Something else went wrong.", error);
         }
     });
 }
 
 // Function call to initialize app
 init();
+
+// testing = {
+//   "title": "readme-gen",
+//   "description": "Generate's a readme using the CLI, node, and inquirer.",
+//   "installationInstructions": "Clone this repository, install node, and make sure that inquirer is downloaded.",
+//   "usageInformation": "Anyone can use this program.",
+//   "contribution-guidelines": "Finish the rest of the program for me.",
+//   "testInstructions": "Unsure.",
+//   "license": "MIT",
+//   "githubUsername": "danieltbonn",
+//   "email": "danieltbonn@gmail.com"
+// }
+
+// let genMarkdown = markdown(testing);
+// console.log(genMarkdown); 
