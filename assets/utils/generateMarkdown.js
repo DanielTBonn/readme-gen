@@ -85,7 +85,7 @@ function addSections(data) {
     "testInstructions": "- [Tests](#tests)\n",
     "license": "- [License](#license)\n",
     "githubUsername": "- [Questions](#questions)\n",
-    "email": "",
+    "email": "- [Questions](#questions)\n",
   }
 
   const keys = {
@@ -119,6 +119,9 @@ ${data.githubUsername}\n`,
   for (let table in addTable) {
     if (data[table]) {
       tableOfContents += addTable[table];
+      if (data['githubUsername'] && table === 'githubUsername') {
+        break;
+      }
     }
   }
 
