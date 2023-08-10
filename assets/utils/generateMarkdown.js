@@ -78,7 +78,16 @@ const question = {
 
 
 function addSections(data) {
-  
+  const addTable = { 
+    "installationInstructions": "- [Installation](#installation)\n",
+    "usageInformation": "- [Usage](#usage)\n",
+    "contributionGuidelines": "- [Contribute](#contribute)\n",
+    "testInstructions": "- [Tests](#tests)\n",
+    "license": "- [License](#license)\n",
+    "githubUsername": "- [Questions](#questions)\n",
+    "email": "",
+  }
+
   const keys = {
     "title": `# ${data.title}\n\n`,
     "description": `## Description
@@ -105,10 +114,21 @@ ${data.githubUsername}\n`,
     "email": `${data.email}`,
   }
 
+  let tableOfContents = ``;
+
+  for (let table in addTable) {
+    if (data[table]) {
+      tableOfContents += addTable[table];
+    }
+  }
+
   let markdownGen = ``;
   for (let key in data) {
     if (data[key]) {
       markdownGen += keys[key];
+      if (key === 'description') {
+        markdownGen += tableOfContents + '\n';
+      }
     }
   }
   return markdownGen;
