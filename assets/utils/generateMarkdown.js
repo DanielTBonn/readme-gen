@@ -108,7 +108,7 @@ ${data.testInstructions}\n\n`,
     "license": `## License
   
 ${data.license}\n\n`,
-    "githubUsername": `## Questions what
+    "githubUsername": `## Questions
   
 ${data.githubUsername}\n`,
     "email": `${data.email}`,
@@ -131,7 +131,7 @@ ${data.githubUsername}\n`,
       
       if (!data['githubUsername'] && key === 'email') {
         console.log(data['githubUsername'])
-        markdownGen += `## Questions yeet\n\n`
+        markdownGen += `## Questions\n\n`
       }
 
       markdownGen += keys[key];
