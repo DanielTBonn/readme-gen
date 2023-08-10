@@ -108,7 +108,7 @@ ${data.testInstructions}\n\n`,
     "license": `## License
   
 ${data.license}\n\n`,
-    "githubUsername": `## Questions
+    "githubUsername": `## Questions what
   
 ${data.githubUsername}\n`,
     "email": `${data.email}`,
@@ -128,17 +128,19 @@ ${data.githubUsername}\n`,
   let markdownGen = ``;
   for (let key in data) {
     if (data[key]) {
+      
+      if (!data['githubUsername'] && key === 'email') {
+        console.log(data['githubUsername'])
+        markdownGen += `## Questions yeet\n\n`
+      }
+
       markdownGen += keys[key];
       if (key === 'description') {
         markdownGen += tableOfContents + '\n';
       }
-    }
+    } 
   }
   return markdownGen;
 
 }
-
-addSections(question);
-
-// let genMark = generateMarkdown(question);
-// console.log(genMark)
+k)
