@@ -191,8 +191,7 @@ function init() {
     .then((answers) => {
         // Information generated will be used to create a table of contents
         let result = JSON.stringify(answers, null, '  ');
-        console.log('\nTesting:');
-        console.log(result);
+        console.log('\nYour Answers:');
         writeToFile('comparemarkdowntest.txt', answers);
     })
     .catch((error) => {
