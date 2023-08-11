@@ -1,10 +1,10 @@
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-# a
+# readme-gen
 
 ## Description
   
-b
+Works
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -15,26 +15,26 @@ b
 
 ## Installation
   
-c
+Nice
 
 ## Usage
   
-d
+Good
 
 ## How to Contribute
   
-e
+Show
 
 ## Tests
   
-f
+No tests
 
 ## License
   
-This repository is protected under the apache-2.0 license:   
-https://opensource.org/licenses/Apache-2.0
+This repository is protected under the cc0-1.0 license:   
+http://creativecommons.org/publicdomain/zero/1.0/
 
 ## Questions
   
-g
-h
+Dbonn
+Dbonn@
