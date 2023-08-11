@@ -162,3 +162,8 @@ ${data.githubUsername}\n`,
 
 }
 
+let res = '';
+if (!res) {
+  console.log("hi")
+}
+
