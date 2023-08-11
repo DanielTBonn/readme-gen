@@ -10,6 +10,7 @@ In order to save time when creating a quality repo, I have worked to develop an 
 - [Usage](#usage)
 - [Contribute](#contribute)
 - [Tests](#tests)
+- [Links](#links)
 - [License](#license)
 - [Questions](#questions)
 
@@ -28,6 +29,10 @@ No contributions are necessary, but if you have any thoughts on how I could impr
 ## Tests
   
 No tests have been written for this application.
+
+## Links
+
+https://watch.screencastify.com/v/sySwynxxUxZreNqUaalP
 
 ## License
   
