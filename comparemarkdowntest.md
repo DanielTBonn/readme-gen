@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # a
 
@@ -31,10 +31,10 @@ f
 
 ## License
   
-This repository is protected under the bsl-1.0 license:   
-https://www.boost.org/LICENSE_1_0.txt
+This repository is protected under the apache-2.0 license:   
+https://opensource.org/licenses/Apache-2.0
 
 ## Questions
   
-a
-d
+g
+h
