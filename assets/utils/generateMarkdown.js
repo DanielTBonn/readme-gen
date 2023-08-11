@@ -91,7 +91,7 @@ This repository is protected under the ${renderLicenseSection(data.license)} lic
 ${renderLicenseLink(data.license)}\n\n`,
     "githubUsername": `## Questions
   
-Github Username: ${data.githubUsername}\n`,
+Github: https://github.com/${data.githubUsername}/\n`,
     "email": `Email: ${data.email}`,
   }
 
