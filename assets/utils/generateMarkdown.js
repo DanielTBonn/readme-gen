@@ -90,7 +90,8 @@ ${data.testInstructions}\n\n`,
 This repository is protected under the ${renderLicenseSection(data.license)} license:   
 ${renderLicenseLink(data.license)}\n\n`,
     "githubUsername": `## Questions
-  
+
+Username: ${data.githubUsername}
 Github: https://github.com/${data.githubUsername}/\n`,
     "email": `Email: ${data.email}`,
   }
