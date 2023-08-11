@@ -91,8 +91,8 @@ This repository is protected under the ${renderLicenseSection(data.license)} lic
 ${renderLicenseLink(data.license)}\n\n`,
     "githubUsername": `## Questions
   
-${data.githubUsername}\n`,
-    "email": `${data.email}`,
+Github Username: ${data.githubUsername}\n`,
+    "email": `Email: ${data.email}`,
   }
 
   // creates table of contents
