@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 # a
 
@@ -31,10 +31,10 @@ f
 
 ## License
   
-This repository is protected under the bsd-2-clause:   
-https://opensource.org/licenses/BSD-2-Clause
+This repository is protected under the bsl-1.0 license:   
+https://www.boost.org/LICENSE_1_0.txt
 
 ## Questions
   
-e
-g
+a
+d

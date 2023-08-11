@@ -19,7 +19,7 @@ let licenseKeys = {
 }
 function renderLicenseBadge(license) {
   let result = '';
-  if(licenseKeys[license]) {
+  if(license) {
     result = licenseKeys[license][0] + '\n\n';
   }
   return result;
@@ -29,7 +29,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let result = '';
-  if(licenseKeys[license]) {
+  if(license) {
     result = licenseKeys[license][1]
   }
   return result;
@@ -39,7 +39,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let result = '';
-  if (licenseKeys[license]) {
+  if (license) {
     result = license;
   }
   return result;
