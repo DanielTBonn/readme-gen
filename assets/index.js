@@ -115,6 +115,13 @@ Provide a short description explaining the what, why, and how of your project. U
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
 - What did you learn?\n\n`,
+validate(value) {
+  if (value !== "") {
+      return true;
+  }
+  
+  return "Your README must have a description."
+}
     },
     {
         type: "input",
@@ -203,7 +210,7 @@ function init() {
     .catch((error) => {
         if (error.isTtyError) {
         // Prompt couldn't be rendered in the current environment
-        console.log("There was an error.", error);
+        console.log("Prompt couldn't be rendered in the current environment", error);
         } else {
         // Something else went wrong
         console.log("Something else went wrong.", error);
