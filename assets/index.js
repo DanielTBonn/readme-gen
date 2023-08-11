@@ -1,10 +1,9 @@
-// TODO: Include packages needed for this application
+// packages necessary for this application to run
 const inquirer = require('inquirer');
 const markdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
-
+// The questions array that holds our question objects used by the inquirer package
 readmeQuestions = [
     {
         type: "input",
@@ -102,7 +101,7 @@ The last section of a high-quality README file is the license. This lets other d
     },
 ]
 
-// TODO: Create a function to write README file
+// writes the readme to a file and adds it to the root of this repo
 function writeToFile(fileName, data) {
   let genMarkdown = markdown(data);
   fs.writeFile(fileName, genMarkdown, (err) => {
@@ -110,12 +109,12 @@ function writeToFile(fileName, data) {
   })
 }
 
-// TODO: Create a function to initialize app
+// This will run the inquirer package using our questionse
 function init() {
     inquirer
     .prompt(readmeQuestions)
     .then((answers) => {
-        // Information generated will be used to create a table of contents
+        // writes the user answers to the questions as JSON and creates a file with the information added to it 
         let result = JSON.stringify(answers, null, '  ');
         console.log('\nYour Answers:');
         console.log(answers);
@@ -134,20 +133,5 @@ function init() {
 
 // Function call to initialize app
 init();
-
-// testing = {
-//   "title": "readme-gen",
-//   "description": "Generate's a readme using the CLI, node, and inquirer.",
-//   "installationInstructions": "Clone this repository, install node, and make sure that inquirer is downloaded.",
-//   "usageInformation": "Anyone can use this program.",
-//   "contribution-guidelines": "Finish the rest of the program for me.",
-//   "testInstructions": "Unsure.",
-//   "license": "MIT",
-//   "githubUsername": "danieltbonn",
-//   "email": "danieltbonn@gmail.com"
-// }
-
-// let genMarkdown = markdown(testing);
-// console.log(genMarkdown); 
 
 
