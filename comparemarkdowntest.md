@@ -1,10 +1,10 @@
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-# Daniel
+# a
 
 ## Description
   
-Generate readmes
+b
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -15,25 +15,25 @@ Generate readmes
 
 ## Installation
   
-None
+c
 
 ## Usage
   
-None
+d
 
 ## How to Contribute
   
-None
+e
 
 ## Tests
   
-None
+f
 
 ## License
   
-bsd-3-clause
+https://www.gnu.org/licenses/gpl-3.0
 
 ## Questions
   
-a
-b
+g
+h
