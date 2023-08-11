@@ -19,9 +19,7 @@ Clone the repository, then at the command line run 'npm i inquirer@8.2.4' to ins
 
 ## Usage
   
-![README-gen application](./assets/images/readme-gen-usage.png)
-
-At the command line, run node ./assets/index.js and then answer the questions one by one through either user input or using the up-down arrow keys to look through a list.
+![README-gen application](./assets/images/readme-gen-usage.png) At the command line, run node ./assets/index.js and then answer the questions one by one through either user input or using the up-down arrow keys to look through a list.
 
 ## Contribute
   
