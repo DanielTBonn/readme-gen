@@ -20,7 +20,7 @@ function renderLicenseBadge(license) {
 
   }
   if(license) {
-    result = licenseKeys[license];
+    result = licenseKeys[license] + '\n\n';
   }
   return result;
 }
