@@ -39,8 +39,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let result = '';
-  if(license) {
-
+  if (licenseKeys[license]) {
+    result = license;
   }
   return result;
 }
@@ -98,6 +98,7 @@ ${data.contributionGuidelines}\n\n`,
 ${data.testInstructions}\n\n`,
     "license": `## License
   
+This repository is protected under the ${renderLicenseSection(data.license)} license:   
 ${renderLicenseLink(data.license)}\n\n`,
     "githubUsername": `## Questions
   

@@ -1,4 +1,4 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
 # a
 
@@ -31,9 +31,10 @@ f
 
 ## License
   
-https://www.gnu.org/licenses/gpl-3.0
+This repository is protected under the bsd-2-clause:   
+https://opensource.org/licenses/BSD-2-Clause
 
 ## Questions
   
+e
 g
-h
