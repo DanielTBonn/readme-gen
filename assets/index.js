@@ -158,7 +158,8 @@ Go the extra mile and write tests for your application. Then provide examples on
         message: `## License
         
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).`,
-        choices: ["MIT", "GIT", "???"],
+        choices: ['apache-2.0', 'gpl-3.0', 'mit', 'bsd-2-clause', 'bsd-3-clause', 'bsl-1.0', 'cc0-1.0', 'epl-2.0', 'agpl-3.0', 'gpl-2.0', 'lgpl-2.1', 'mpl-2.0', 'unlicense', 'none']
+
     },
     {
         type: "input",
@@ -190,9 +191,8 @@ function init() {
     .then((answers) => {
         // Information generated will be used to create a table of contents
         let result = JSON.stringify(answers, null, '  ');
-        console.log('\nTesting:');
-        console.log(result);
-        writeToFile('comparemarkdowntest.txt', answers);
+        console.log('\nYour Answers:');
+        writeToFile('comparemarkdowntest.md', answers);
     })
     .catch((error) => {
         if (error.isTtyError) {
@@ -222,3 +222,5 @@ init();
 
 // let genMarkdown = markdown(testing);
 // console.log(genMarkdown); 
+
+
