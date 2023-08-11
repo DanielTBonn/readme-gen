@@ -8,79 +8,51 @@ readmeQuestions = [
     {
         type: "input",
         name: "title",
-        message: `## Title
-        
-Please enter a title: \n\n`,
+        message: `Enter a title for this project (required):`,
         validate(value) {
             if (value !== "") {
                 return true;
             }
-            
             return "Your README must have a title."
         }
     },
     {
         type: "input",
         name: "description",
-        // message: "Enter a description of the project.",
-        message: ` # Description
-        
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?\n\n`,
-validate(value) {
-  if (value !== "") {
-      return true;
-  }
-  
-  return "Your README must have a description."
-}
+        message: "Enter a description of the project. Ask yourself, what motivated you, what was the reason, what was solved, and what did you learn building this project? (required): ",
+        validate(value) {
+          if (value !== "") {
+              return true;
+          }
+          return "Your README must have a description."
+        }
     },
     {
         type: "input",
         name: "installationInstructions",
-        message: `## Installation Instructions
-        
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.\n\n`,
+        message: "Enter installation instructions. Provide a step-by-step description: ",
     },
     {
         type: "input",
         name: "usageInformation",
-        // message: "Enter usage information for the project.",
-        message : `## Usage Information
-        
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-\`\`\`    md
-![alt text](assets/images/screenshot.png)
-    \`\`\`
-    \n`,
+        message: "Enter examples and instructions for using this project:",
     },
     {
         type: "input",
         name: "contributionGuidelines",
-        message: `## Contribution Guidelines
+        message: "If you would like developers to contribute, enter how they may do so:",
         
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.\n\n`,
       },
       {
         type: "input",
         name: "testInstructions",
-        message: `## Tests
+        message: "If you have written tests for your application, enter examples on how to run them: ",
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.\n\n`,
     },
     {
         type: "list",
         name: "license",
-        message: `## License
-        
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).`,
+        message: "Choose a license that lets developers know what they can and cannot do with this project: ",
         choices: ['apache-2.0', 'gpl-3.0', 'mit', 'bsd-2-clause', 'bsd-3-clause', 'bsl-1.0', 'cc0-1.0', 'epl-2.0', 'agpl-3.0', 'gpl-2.0', 'lgpl-2.1', 'mpl-2.0', 'unlicense', 'none'],
         filter(license) {
           if (license === 'none') {
@@ -92,12 +64,12 @@ The last section of a high-quality README file is the license. This lets other d
     {
         type: "input",
         name: "githubUsername",
-        message: "Add your github username.\n\n",
+        message: "Add your github username.",
     },
     {
         type: "input",
         name: "email",
-        message: "Add your email address.\n\n",
+        message: "Add your email address.",
     },
 ]
 
@@ -111,6 +83,7 @@ function writeToFile(fileName, data) {
 
 // This will run the inquirer package using our questionse
 function init() {
+    console.log("\nWelcome to the readme-generator! Answer a couple of questions and we will generate a quality README.md file for you!\n");
     inquirer
     .prompt(readmeQuestions)
     .then((answers) => {
@@ -118,7 +91,7 @@ function init() {
         let result = JSON.stringify(answers, null, '  ');
         console.log('\nYour Answers:');
         console.log(answers);
-        writeToFile('comparemarkdowntest.md', answers);
+        writeToFile('generatedREADME.md', answers);
     })
     .catch((error) => {
         if (error.isTtyError) {
