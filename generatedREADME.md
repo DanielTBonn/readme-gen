@@ -1,10 +1,10 @@
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# A title goes here
+# README-generator
 
 ## Description
   
-Enter a description here
+In order to save time when creating a quality repo, I have worked to develop an application using the inquirer package to automate the task k of righting a high quality README.md file. I learned how to install and import packages using the require method, how to access functions from other .js files, and how to use node.js in order to run packages and execute applications from the CLI.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -15,24 +15,26 @@ Enter a description here
 
 ## Installation
   
-Enter installation instructions here
+Clone the repository, then at the command line run 'npm i inquirer@8.2.4' to install dependices for this application.
 
 ## Usage
   
-Enter how to use the project here
+![README-gen application](./assets/images/readme-gen-usage.png)
 
-## How to Contribute
+At the command line, run node ./assets/index.js and then answer the questions one by one through either user input or using the up-down arrow keys to look through a list.
+
+## Contribute
   
-Enter contribution guidelines here
+No contributions are necessary, but if you have any thoughts on how I could improve my code please feel free to message me at my email on the bottom of the page.
 
 ## Tests
   
-Enter how to use tests here
+No tests have been written for this application.
 
 ## License
   
-This repository is protected under the apache-2.0 license:   
-https://opensource.org/licenses/Apache-2.0
+This repository is protected under the mit license:   
+https://opensource.org/licenses/MIT
 
 ## Questions
   
