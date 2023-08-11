@@ -1,5 +1,6 @@
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)# a
+# a
 
 ## Description
   
@@ -30,7 +31,8 @@ f
 
 ## License
   
-apache-2.0
+This repository is protected under the apache-2.0 license:   
+https://opensource.org/licenses/Apache-2.0
 
 ## Questions
   
