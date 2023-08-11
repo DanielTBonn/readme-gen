@@ -83,6 +83,7 @@ function writeToFile(fileName, data) {
 
 // This will run the inquirer package using our questionse
 function init() {
+    console.log("\nWelcome to the readme-generator! Answer a couple of questions and we will generate a quality README.md file for you!\n");
     inquirer
     .prompt(readmeQuestions)
     .then((answers) => {
