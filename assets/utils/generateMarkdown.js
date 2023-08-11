@@ -79,7 +79,7 @@ ${data.installationInstructions}\n\n`,
     "usageInformation": `## Usage
   
 ${data.usageInformation}\n\n`,
-    "contributionGuidelines": `## How to Contribute
+    "contributionGuidelines": `## Contribute
   
 ${data.contributionGuidelines}\n\n`,
     "testInstructions": `## Tests
@@ -123,5 +123,4 @@ ${data.githubUsername}\n`,
     } 
   }
   return markdownGen;
-
 }

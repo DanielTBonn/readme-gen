@@ -77,7 +77,7 @@ readmeQuestions = [
 function writeToFile(fileName, data) {
   let genMarkdown = markdown(data);
   fs.writeFile(fileName, genMarkdown, (err) => {
-    err ? console.log(err) : console.log(`${fileName} created successfully!`);
+    err ? console.log(err) : console.log(`\n${fileName} created successfully!`);
   })
 }
 
@@ -106,5 +106,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
-

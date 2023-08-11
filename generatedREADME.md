@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# Enter your title here
+# A title goes here
 
 ## Description
   
@@ -19,7 +19,7 @@ Enter installation instructions here
 
 ## Usage
   
-Enter usage information here
+Enter how to use the project here
 
 ## How to Contribute
   
@@ -27,7 +27,7 @@ Enter contribution guidelines here
 
 ## Tests
   
-Enter tests and how to use them here
+Enter how to use tests here
 
 ## License
   
@@ -36,5 +36,5 @@ https://opensource.org/licenses/Apache-2.0
 
 ## Questions
   
-Daniel
-Daniel@Mail.com
+DanielTBonn
+DanielTBonn@gmail.com
