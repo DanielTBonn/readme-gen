@@ -41,5 +41,5 @@ https://opensource.org/licenses/MIT
 
 ## Questions
   
-Github Username: DanielTBonn,
+Github https://github.com/DanielTBonn/,
 Email: DanielTBonn@gmail.com
