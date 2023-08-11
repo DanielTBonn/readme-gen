@@ -90,7 +90,7 @@ function init() {
         let result = JSON.stringify(answers, null, '  ');
         console.log('\nYour Answers:');
         console.log(answers);
-        writeToFile('comparemarkdowntest.md', answers);
+        writeToFile('generatedREADME.md', answers);
     })
     .catch((error) => {
         if (error.isTtyError) {
